@@ -1,0 +1,32 @@
+### Get all developers
+GET http://localhost:5000/api/developers
+
+### Add a new developer
+POST http://localhost:5000/api/developers
+Content-Type: application/json
+
+{
+  "name": "Satya Reddy",
+  "email": "satya@example.com",
+  "skills": ["JavaScript", "React"]
+}
+
+### Update a developer (change ID to real one)
+PUT http://localhost:5000/api/developers/1687555401010
+Content-Type: application/json
+
+{
+  "name": "Updated Name"
+}
+
+### Delete a developer (change ID to real one)
+DELETE http://localhost:5000/api/developers/1687555401010
+
+POST http://localhost:5000/api/developers
+Content-Type: application/json
+
+{
+  "name": "",
+  "email": "",
+  "skills": []
+}
